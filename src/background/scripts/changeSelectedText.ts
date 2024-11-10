@@ -10,13 +10,17 @@ export const changeSelectedText = async () => {
         await chrome.storage.local.get(`${language ?? 'RU'}_EN`)
       )[`${language ?? 'RU'}_EN`];
 
+      const textContent = selectedElement.textContent;
+
       selectedElement.textContent =
-        selectedElement.textContent
+        textContent
           ?.split('')
           .map((item) => LANG_EN[item as keyof typeof LANG_EN] ?? item)
-          .join('') ?? selectedElement.textContent;
+          .join('') ?? textContent;
 
-      return;
+      if (textContent !== selectedElement.textContent) {
+        return;
+      }
     }
 
     if (selectedElement.textContent?.match(/[A-z]/)) {
