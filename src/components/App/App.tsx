@@ -4,12 +4,12 @@ import Typography from 'antd/es/typography';
 import Button from 'antd/es/button';
 import Select from 'antd/es/select';
 import Input from 'antd/es/input';
+import Tooltip from 'antd/es/tooltip';
 import Github from '@/shared/UI/Icons/GithubIcon.svg?react';
 import Telegram from '@/shared/UI/Icons/TelegramIcon.svg?react';
 import Language from '@/shared/UI/Icons/Language.svg?react';
 
 import styles from './App.module.css';
-import { Tooltip } from 'antd';
 
 function App() {
   const [selectedLanguage, setSelectedLanguage] = useState<
