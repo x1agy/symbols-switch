@@ -26,4 +26,26 @@
       height: 50px;
     }
   }
+
+  .settings {
+    width: 100%;
+
+    .select {
+      width: 70px;
+    }
+
+    .hotKeys {
+      color: white;
+      font-size: 26px;
+
+      .hotKeys_input {
+        width: 80px;
+      }
+    }
+
+    .questionMark {
+      cursor: pointer;
+      margin-left: 8px;
+    }
+  }
 }

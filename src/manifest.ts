@@ -2,7 +2,7 @@ import { defineManifest } from '@crxjs/vite-plugin';
 
 export const manifest = defineManifest({
   manifest_version: 3,
-  name: 'Transliterator - Транслитератор текста',
+  name: 'Language switcher',
   version: '1.0.0',
   action: {
     default_popup: 'index.html',
