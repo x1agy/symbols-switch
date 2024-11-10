@@ -1,0 +1,8 @@
+{
+    "hello": {
+        "message": "Hi, it is extension for transliteration text"
+    },
+    "description": {
+        "message": "To use it press RMB on text you want to transliterate"
+    }
+}
